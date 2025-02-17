@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHOOL</title>
+    
+    <!-- icon link -->
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
+
+    
+   <!--burgur menu start  -->
+   <script>
+    function toggleMenu() {
+        document.querySelector(".nav ul").classList.toggle("active");
+    }
+   </script>
+   <!--burgur menu end  -->
+
+    <style>
+ /*  <!-- navigation --> */
+ * {
+              margin: 0;
+              padding: 0;
+            }
+            .container {
+              padding: 5% 10%;
+            }
+
+            .bg-img {
+              position: relative;
+            }
+
+            .bg-img img {
+              width: 100%;
+              height: 500px;
+            }
+
+            .bg-img::after {
+              content: "";
+              background-color: black;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              opacity: 0.6;
+            }
+
+            .logo {
+              width: 10%;
+            }
+
+            .logo img {
+              margin-top: 10px;
+              padding-left: 150px;
+            }
+            .menu-icon{
+    display: none;
+}
+
+            .main-navigation {
+              /* position:fixed; */
+              background-color: black;
+              position: absolute;
+              display: flex;
+              align-items: center;
+              top: 0;
+              width: 100%;
+              z-index: 2;
+            }
+
+            .nav {
+              width: 80%;
+            }
+
+            .nav ul {
+              display: flex;
+              justify-content: space-between;
+              padding-left: 50%;
+              list-style: none;
+            }
+
+            .nav ul li a {
+              text-decoration: none;
+              font-size: 20px;
+              color: white;
+            }
+
+            .nav ul li:hover {
+              color: white;
+              text-decoration: underline 3px;
+              border-radius: 5px;
+            }
+
+            .main-text {
+              position: absolute;
+              top: 280px;
+              right: 35%;
+              z-index: 1;
+            }
+
+            .text h1 {
+              color: white;
+              text-align: center;
+            }
+
+            .text p {
+                text-align: center;
+
+              font-size: x-large;
+              color: white;
+              font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+                sans-serif;
+            }
+            
+            /* about css */
+            .main-about {
+               text-align: center;
+                width: 100%;
+                height: 300px;
+                border-radius: 20px;
+                background: hsla(220, 20%, 97%, 1);
+
+            }
+
+            .aheader {
+                border-radius: 20px 20px 0 0;
+                background: hsla(200, 99%, 43%, 1);
+                padding: 10px;
+                text-align: center;
+                font-family: sans-serif;
+            }
+            .aheader h2{
+                color: white;
+            }
+
+            .atext{
+                padding: 30px;
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+
+
+
+
+
+ /* <!-- footer --> */
+ .footer-page {
+    width: 100%;
+    background: hsla(0, 0%, 92%, 1);
+}
+
+.footer-body {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+.footer-head2 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding-left: 60px;
+    gap: 60px;
+    font-family: sans-serif
+}
+
+.list1 li {
+    list-style: none;
+    padding: 10px;
+}
+
+.list2 li {
+    list-style: none;
+    padding: 9px;
+}
+
+.list3 img {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom p {
+    padding: 20px;
+    font-family: sans-serif;
+    color: black;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+              
+             
+              .logo img {
+                  width: 80%;
+                  padding-left: 80px;
+              }
+              .nav ul {
+                  padding-left: 36%;
+              }
+              .nav ul li  {
+                  padding: 8px;
+              }
+              .main-text {
+                  top: 300px;
+                  right: 28%;
+                  font-size: 10px;
+              }
+      
+              .footer-page{
+                margin-top: 20px;
+              }
+              .footer-body{
+                width: 100%;
+              }
+              .footer-head1{
+                  width: 25%;
+                  font-size: 15px;
+              }
+              .footer-head2{
+                  width: 20%;
+                  padding-left: 240px;
+              }
+              .footer-head2 .list1{
+              
+                  font-size: 13px;
+              }
+              .footer-head2 .list2{
+              
+                  font-size:13px;
+              }.footer-head2 .list3{
+
+                  font-size: 13px;
+              } 
+
+
+}
+
+@media only screen and (max-width: 426px) {
+
+.logo img{
+ width: 100%;
+ padding-left: 45px;
+}
+.bg-img img{
+height: 350px;
+}
+.main-text {
+  top: 190px;
+  right: 40px;
+}
+.main-text .text h1{
+  font-size: 20px;
+}
+.main-text .text p{
+  font-size: 15px;
+}
+.atext{
+  font-size: 12PX;
+}
+.footer-page {
+        width: 100%;
+
+    }
+
+    .footer-body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-head1 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-left: 100px;
+
+    }
+    .footer-head1 h3 {
+        padding: 0 0 0 0;
+    }
+    .footer-head2 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-left: 100px;
+        padding-top: 20%;
+
+    }
+
+    .footer-head2 .list1 {
+        font-size: 15px
+    }
+
+    .footer-head2 .list2 {
+        font-size: 15px
+    }
+
+    .footer-head2 .list3 {
+        font-size: 15px
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+}
+
+/* / burgur menu start / */
+
+@media (max-width: 800px) {
+  .menu-icon {
+      display: block;
+      color: white;
+      font-size: 30px;
+      position: relative;
+      right: -75%;
+      cursor: pointer;
+  }
+
+  .nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background: #101524db;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .nav ul.active {
+      display: flex;
+      margin-top: 5%;
+  }
+
+  .nav ul li {
+      padding: 10px 0;
+      text-decoration: none;
+  }
+}
+/* / burgur menu end / */
+
+
+
+    </style>
+</head>
+<body>
+        <!-- navigation -->
+    <div class="main-navigation">
+      <div class="logo">
+        <img src="img/Logo.png" alt="home" class="home" />
+      </div>
+ <!--burgur menu start  -->
+ <div class="menu-icon" onclick="toggleMenu()">
+  ☰
+</div>
+<!--burgur menu end  -->
+      <div class="nav">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Teachers.html">Teachers</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contactus.html">Contact us</a></li>
+            <li><a href="Blog.html">Blogs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-img">
+      <img src="img/bannar.png" alt="logo" class="logo" />
+    </div>
+
+    <div class="main-text">
+      <div class="text">
+        <h1>Selamat datang calon peserta didik baru</h1>
+        <p> SMPN 1 CIBADAK
+            <br>
+            Tahun Pelajaran 2024-2025</p>
+      </div>
+    </div>
+    <!-- about -->
+
+    <div class="container">
+        <div class="main-about">
+            <div class="aheader">
+                <h2>About Us</h2>
+            </div>
+            <div class="atext">
+               
+                <p>SMP Negeri 1 Cibadak adalah sekolah menengah pertama negeri yang berada di Kecamatan Cibadak, Kabupaten Sukabumi, Jawa Barat, <br> Indonesia. SMP Negeri 1 Cibadak berdiri pada tahun 1960. Kepala sekolah sekarang adalah Drs. H. Asep Sopian, M.Pd. Status sekolah ini adalah Sekolah Standar Nasional. </p>
+               <br>
+                <p>Simulasi pendaftaran sudah dibuka, namun diluar tanggal yang disebutkan diatas, akan dihapus kembali</p>
+               <br>
+                <p>Admin PPDB SMPN 1 Cibadak</p>
+            </div>
+        </div>
+    
+    </div>
+
+
+
+
+    <!-- footer -->
+
+<footer>
+    <div class="footer-page">
+      <div class="container">
+        <div class="footer-body">
+  
+          <div class="footer-head1">
+            <img src="img/Logo.png" alt="logo">
+            <p>Jl. Siliwangi No 123, Cibadak, Cibadak, Sukabumi,
+              Jawa Barat 43351, Indonesia, (0266)531333</p>
+            <h3>info@smpn1cibadak.sch.id <br> smpn1cbd_kabsi@yahoo.co.id</h3>
+          </div>
+  
+          <div class="footer-head2">
+            <div class="list1">
+              <ul>
+                <h2>Jelajah</h2>
+                <li>Profil </li>
+                <li>Sekola</li>  
+                <li>Sambutan</li>
+                <li>Berita</li>
+              </ul>
+            </div>
+           
+            <div class="list2">
+              <ul>
+                <h2>Halaman Umum</h2>
+                <li>Kontak </li>
+                <li>Lokasi</li>
+                <li>Panduan PPDB</li>  
+                <li>PPDB SMPN 1 Cibadak</li>
+                <li>Data Guru</li>
+              </ul>
+            </div>
+            <div class="list3">
+              <h2>Social Media</h2>
+              <img src="img/instagram.png" alt="in">
+              <img src="img/facebook.png" alt="fc">
+              <img src="img/linkedin.png" alt="li">
+              <img src="img/google.png" alt="go">
+            </div>
+           
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <p>© 2021 SMP Negeri 1 Cibadak. All Rights Reserved.</p>
+     </div>
+     
+    </div>
+
+</body>
+</html>
